@@ -1,0 +1,37 @@
+/* LESS Document */
+@color-primary: #38bdb6;
+@color-primary-dark: #0e8c85;
+@color-lt-gray: #f5f5f5;
+@color-text: #717171;
+@text-dim: lighten(@color-text, 25%);
+@color-yellow: #f9ba32;
+@color-white: #fff;
+@color-black: #000;
+@text-faded: #b7f1ee;
+
+@font: "Open Sans", sans-serif;
+
+@border-color: #e5e5e5;
+
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+.border-radius-custom (@topleft: 0px, @topright: 0px, @bottomleft: 7px, @bottomright: 7px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+.border-radius-input-group (@topleft:7px, @topright: 0px, @bottomleft: 7px, @bottomright: 0px) {
+	-webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+	-moz-border-radius: @topleft @topright @bottomright @bottomleft;
+	border-radius: @topleft @topright @bottomright @bottomleft;
+}
+.background-cover(@cover: cover) {
+  -webkit-background-size: @cover;
+  -moz-background-size: @cover;
+  -o-background-size: @cover;
+  background-size: @cover;
+}
